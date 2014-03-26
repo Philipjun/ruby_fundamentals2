@@ -2,19 +2,25 @@
 
 
 students = {
-  :cohort1 => 34,
-  :cohort3 => 22,
-  :cohort4 => 43,
+  :cohort1 => 35.7,
+  :cohort3 => 23.1,
+  :cohort4 => 45.15,
 }
-
-
-students.each  do |key, value|
-puts "#{key}: #{value * 1.05}"
-
+ 
+value22 =0
+students.map  do |key, value|
+	value22 +=value
+puts "#{key}: #{value22}"
 end
 
-sum = 0
 
+total_students=0
+value2=0
+students.each do |key, value| 
+	value2 +=value
+end
+
+ puts "Total students in cohort is #{value2}"
 
 
 
